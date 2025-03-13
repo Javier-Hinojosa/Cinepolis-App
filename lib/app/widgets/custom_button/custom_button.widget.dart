@@ -20,15 +20,15 @@ class CustomButton extends StatelessWidget {
       ),
       child: ElevatedButton(
         style: ButtonStyle(
-            backgroundColor: MaterialStateProperty.all<Color>(
+            backgroundColor: WidgetStateProperty.all<Color>(
                 Theme.of(context).primaryColor),
-            foregroundColor: MaterialStateProperty.all<Color>(
+            foregroundColor: WidgetStateProperty.all<Color>(
                 Theme.of(context).inputDecorationTheme.fillColor!)),
         onPressed: () => onPressed(),
         child: Container(
             child: Text(
               text,
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.bodyMedium,
               textAlign: TextAlign.center,
             ),
             padding: EdgeInsets.all(10)),

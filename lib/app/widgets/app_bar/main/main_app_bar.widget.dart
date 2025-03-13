@@ -1,7 +1,7 @@
 import 'package:Cinepolis/app/utils/shadow.utils.dart';
 import 'package:flutter/material.dart';
 
-class MainAppBar extends StatelessWidget with PreferredSizeWidget {
+class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
   final double height;
   final String title;
   final Widget widget;
@@ -39,7 +39,7 @@ class MainAppBar extends StatelessWidget with PreferredSizeWidget {
           ),
           Text(
             title,
-            style: Theme.of(context).primaryTextTheme.headline2,
+            style: Theme.of(context).primaryTextTheme.bodyMedium,
           ),
           widget
         ],

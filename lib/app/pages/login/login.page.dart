@@ -1,5 +1,4 @@
 import 'package:Cinepolis/app/pages/login/widgets/recovery.page.dart';
-import 'package:Cinepolis/app/widgets/custom_button/custom_loading_button.widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'login.controller.dart';
@@ -29,7 +28,7 @@ class LoginPage extends GetView<LoginController> {
         child: TextButton(
       child: Text(
         "Olvidaste tu contraseña?",
-        style: Theme.of(context).textTheme.bodyText1,
+        style: Theme.of(context).textTheme.bodyMedium,
       ),
       onPressed: () {
         showModalBottomSheet(
@@ -66,10 +65,8 @@ class LoginPage extends GetView<LoginController> {
             width: 1.5,
           ),
         ),
-        child: CustomLoadingButton(
-            btnController: controller.rondButton.value,
-            text: '${controller.loginText}',
-            color: Colors.black,
+        child: ElevatedButton(
+          child: Text('${controller.loginText}'),
             onPressed: () => controller.startTime()),
       );
     });

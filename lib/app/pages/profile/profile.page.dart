@@ -60,7 +60,7 @@ class ProfilePage extends GetView<ProfileController> {
   }
 
   Text _textPain(BuildContext context, String text) {
-    return Text(text, style: Theme.of(context).textTheme.subtitle1);
+    return Text(text, style: Theme.of(context).textTheme.bodyMedium);
   }
 
   Widget _buttonExit(BuildContext context) {

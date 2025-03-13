@@ -16,7 +16,7 @@ class HomeCard extends StatelessWidget {
       child: ListView(physics: const NeverScrollableScrollPhysics(), children: [
         Text(cardItem.title,
                 textAlign: TextAlign.center,
-                style: Theme.of(context).textTheme.headline6)
+                style: Theme.of(context).textTheme.titleMedium)
             .paddingAll(15),
         _dynamicContain()
       ]),

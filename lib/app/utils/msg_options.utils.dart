@@ -16,7 +16,7 @@ class MsgOptions {
               children: [
                 Text(
                   title,
-                  style: Theme.of(context).textTheme.subtitle1,
+                  style: Theme.of(context).textTheme.bodyMedium,
                 ),
                 IconButton(
                     onPressed: () => Navigator.of(context).pop(true),
@@ -78,7 +78,7 @@ class MsgOptions {
         onPressed: () => onPressed,
         child: Text(
           text,
-          style: Theme.of(context).primaryTextTheme.subtitle1,
+          style: Theme.of(context).primaryTextTheme.bodyMedium,
         ),
         style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all<Color>(Colors.black)));

@@ -35,7 +35,7 @@ class MenuScreenDrawer extends GetView<MainController> {
                           return ListTile(
                             leading: e.icon,
                             title: Text(e.label,
-                                style: Theme.of(context).textTheme.bodyText1),
+                                style: Theme.of(context).textTheme.bodyMedium),
                             onTap: () {
                               e.action();
                               controller.actionDrawer();
@@ -77,19 +77,19 @@ class MenuScreenDrawer extends GetView<MainController> {
           textAlign: TextAlign.start,
           style: Theme.of(context)
               .textTheme
-              .subtitle1!
+              .bodyMedium!
               .apply(fontWeightDelta: FontWeight.bold.index),
           overflow: TextOverflow.ellipsis,
         ),
         Text(
           controller.userV.value.code,
           textAlign: TextAlign.start,
-          style: Theme.of(context).textTheme.headline6,
+          style: Theme.of(context).textTheme.bodyLarge,
           overflow: TextOverflow.ellipsis,
         ).paddingOnly(top: 3),
         Text(controller.profile.first.correoE,
                 textAlign: TextAlign.start,
-                style: Theme.of(context).textTheme.headline5,
+                style: Theme.of(context).textTheme.bodyLarge,
                 overflow: TextOverflow.ellipsis)
             .paddingOnly(top: 3),
       ],

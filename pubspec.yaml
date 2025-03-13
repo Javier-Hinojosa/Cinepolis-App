@@ -18,44 +18,35 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ^3.5.3
 
 dependencies:
   flutter:
     sdk: flutter
-  get: ^4.6.1
+  get: ^4.7.2
   http: ^0.13.3
   flutter_staggered_grid_view: ^0.4.0
   cupertino_icons: ^1.0.4
-  shared_preferences: any
-  mailer: ^5.0.1
-  image_picker: ^0.8.3
-  flutter_image_compress: ^1.1.0
+  shared_preferences: ^2.5.2
+  mailer: ^6.4.1
   flutter_holo_date_picker: ^1.0.3
-  permission_handler: ^8.1.4+2
-  qr_code_scanner: ^0.6.1
-  photo_view: ^0.13.0
-  qr_flutter: ^4.0.0
-  socket_io_client: any
-  flutter_background_service: ^0.2.2
-  awesome_notifications: ^0.6.16
-  rounded_loading_button: ^2.1.0
+  photo_view: ^0.15.0
+  qr_flutter: ^4.1.0
   font_awesome_flutter: ^9.2.0
   flutter_rating_bar: ^4.0.0
   horizontal_data_table: ^3.4.3
   flutter_zoom_drawer: ^2.3.0
-  flutter_barcode_scanner: ^2.0.0
   fl_chart: ^0.41.0
-  syncfusion_flutter_gauges: ^19.3.45
+  syncfusion_flutter_gauges: ^28.2.11
   contained_tab_bar_view: ^0.8.0
-  flutter_cached_pdfview: any
-  geolocator: ^8.0.3
   introduction_screen: ^2.1.0
   extended_sliver: ^2.0.1
   badges: ^2.0.2
-  flutter_typeahead: ^3.2.4
-  syncfusion_flutter_datagrid: ^19.4.41
+  flutter_typeahead: ^5.2.0
+  syncfusion_flutter_datagrid: ^28.2.11
   dio: ^4.0.4
+  flutter_plugin_android_lifecycle: ^2.0.27
+  file: ^7.0.1
 
 
 dev_dependencies:

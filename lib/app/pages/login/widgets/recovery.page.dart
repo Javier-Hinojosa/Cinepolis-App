@@ -30,7 +30,7 @@ class RecoveryPasswordPage extends GetView<RecoveryPasswordController> {
               height: 230,
             ),
             Text("Ingresa tu correo electrónico",
-                    style: Theme.of(context).textTheme.bodyText1)
+                    style: Theme.of(context).textTheme.bodyMedium)
                 .paddingOnly(top: 20, bottom: 20),
             TextField(
               obscureText: false,
@@ -68,7 +68,7 @@ class RecoveryPasswordPage extends GetView<RecoveryPasswordController> {
             Center(
               child: TextButton(
                   child: Text('Cancelar',
-                      style: Theme.of(context).textTheme.bodyText1),
+                      style: Theme.of(context).textTheme.bodyMedium),
                   onPressed: () => Get.back()),
             ).paddingOnly(bottom: 15)
           ],

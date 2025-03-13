@@ -34,7 +34,7 @@ class SplashPage extends GetView<SplashController> {
         // The green box must be a child of the AnimatedOpacity widget.
         child: Text(
           '${controller.nameCorporation}',
-          style: Theme.of(context).textTheme.headline3,
+          style: Theme.of(context).textTheme.titleLarge,
         ),
       );
     });

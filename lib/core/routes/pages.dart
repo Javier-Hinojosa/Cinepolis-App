@@ -1,12 +1,5 @@
-import 'package:Cinepolis/app/pages/audit/cash_register/cash_register.page.dart';
-import 'package:Cinepolis/app/pages/audit/cash_register/new_archery/new_archery.page.dart';
-import 'package:Cinepolis/app/pages/audit/rotisserie_inventory/inventory_detail/rotisserie_inventory_detail.page.dart';
-import 'package:Cinepolis/app/pages/audit/rotisserie_inventory/inventory_list/rotisserie_inventory.page.dart';
-import 'package:Cinepolis/app/pages/audit/rotisserie_inventory/inventory_new/rotisserie_inventory_new.page.dart';
 import 'package:Cinepolis/app/pages/login/login.page.dart';
 import 'package:Cinepolis/app/pages/profile/profile.page.dart';
-import 'package:Cinepolis/app/pages/quizzer/availables/quizz/quizz_answers.page.dart';
-import 'package:Cinepolis/app/pages/quizzer/quizzer.page.dart';
 import 'package:Cinepolis/app/pages/splash/splash.page.dart';
 import 'package:Cinepolis/app/widgets/menu/menu_zoom_drawer.widget.dart';
 import 'package:Cinepolis/core/routes/bindings.dart';
@@ -42,34 +35,6 @@ abstract class Pages {
     GetPage(
         name: Routes.PROFILE,
         page: () => ProfilePage(),
-        binding: ProfileBinding(authService, employeeService)),
-    GetPage(
-        name: Routes.CASH_REGISTER,
-        page: () => CashRegisterPage(),
-        binding: CashRegistersBinding(branchService)),
-    GetPage(
-        name: Routes.CASH_NEW,
-        page: () => NewArcheryPage(),
-        binding: NewArcheryBinding()),
-    GetPage(
-        name: Routes.ROTISSERIE_INVENTORY,
-        page: () => RotisserieInventoryPage(),
-        binding: RotisserieInventoryBinding(branchService)),
-    GetPage(
-        name: Routes.ROTISSERIE_INVENTORY_DETAIL,
-        page: () => RotisserieInventoryDetailPage(),
-        binding: RotisserieInventoryDetailBinding()),
-    GetPage(
-        name: Routes.ROTISSERIE_INVENTORY_NEW,
-        page: () => RotisserieInventoryNewPage(),
-        binding: RotisserieInventoryNewBinding(fileManagerService)),
-    GetPage(
-        name: Routes.QUIZZER,
-        page: () => QuizzerPage(),
-        binding: QuizzerBinding(fileManagerService)),
-    GetPage(
-        name: Routes.QUIZZER_ANSWER,
-        page: () => QuizzerAnswersPage(),
-        binding: QuizzerBinding(fileManagerService)),
+        binding: ProfileBinding(authService, employeeService))
   ];
 }

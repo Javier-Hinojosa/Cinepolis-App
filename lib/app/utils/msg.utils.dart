@@ -76,7 +76,6 @@ class MsgUtils {
       {bool isCancel = false}) {
     return TextButton(
         style: TextButton.styleFrom(
-          primary: Colors.white,
           backgroundColor: Theme.of(context).primaryColor,
           textStyle: const TextStyle(fontSize: 16),
         ),
